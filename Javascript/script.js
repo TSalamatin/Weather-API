@@ -42,7 +42,7 @@ function fetchForecast(citydata) {
   cityLon = citydata.coord.lon
   cityLat = citydata.coord.lat
 
-  fetch('http://api.openweathermap.org/data/2.5/forecast?lat=' + cityLat + '&lon=' + cityLon + '&appid=e498b6c6d940bacad67439963e87b103&units=imperial', {
+  fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + cityLat + '&lon=' + cityLon + '&appid=e498b6c6d940bacad67439963e87b103&units=imperial', {
   })
     .then(function (response) {
       if (response.code == 404) {
