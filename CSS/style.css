@@ -1,0 +1,51 @@
+#header {
+    text-align: center;
+    color: white;
+    background-color: blue;
+    font-size: 200%;
+}
+
+#left-col {
+font-size: 155%;
+font-weight: 800;
+}
+
+#button-container{
+    display: flex;
+    flex-direction: column;
+    border-top: gray solid;
+}
+
+#searchbtn {
+width: 100%;
+margin-top: 2%;
+margin-bottom: 5%;
+}
+
+
+
+
+#day-0{
+    border: 5px solid black;
+    margin: 2%;
+    height: fit-content;
+    width: auto;
+    text-align: left;
+}
+
+
+
+.p-2 {
+    border: 2px solid black;
+    height: fit-content;
+    width: auto;
+    text-align: left;
+}
+
+.card {
+    background-color: mintcream;
+}
+
+.btn-class{
+    margin: 5%;
+}
