@@ -125,7 +125,7 @@ function getCityData(keyname) {
   $("#day-0").find('.humidity').text('Humidity: ' + oldData[0].main.humidity + '%')
   //Loop to add the days
   for (let index = 1; index < oldData.length; index++) {
-    $("#day-" + index).find('.date').text(oldData[index].dt_txt)
+    $("#day-" + index).find('.date').text(oldData[index].dt_txt.slice(0, 10))
     $("#day-" + index).find('.icon').attr("src", "http://openweathermap.org/img/w/" + oldData[index].weather[0].icon + ".png")
 
     $("#day-" + index).find('.temperature').text('Temp: ' + oldData[index].main.temp)
