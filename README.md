@@ -1,4 +1,7 @@
 # Weather-API
+
+Link: https://tsalamatin.github.io/Weather-API/
+
 Week 6, Server Side APIs
 
 In this assigment, we were tasked to pull data from the OpenWeather API and display the data on the screen.
