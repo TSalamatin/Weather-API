@@ -69,7 +69,7 @@ function fetchForecast(citydata) {
           $("#day-" + dayIdent).find('.winddegree').text('@ ' + data.list[index].wind.deg + '°')
           $("#day-" + dayIdent).find('.humidity').text('Humidity: ' + data.list[index].main.humidity + '%')
           //Add it to the array
-          weekData.push(data)
+          weekData.push(data.list[index])
 
 
 
@@ -112,9 +112,12 @@ function storeCityData(keyname, data) {
 function getCityData(keyname) {
   var oldData = JSON.parse(localStorage.getItem(keyname))
   //Basically redo the previous code using the oldData array
+  console.log(oldData[0].dt)
   var day = new Date(oldData[0].dt * 1000)
+  
   $("#day-0").find('#city-name').text(oldData[0].name)
   $("#day-0").find('.date').text(day.toDateString())
+  console.log(oldData[0].weather[0].icon)
   $("#day-0").find('.icon').attr("src", "http://openweathermap.org/img/w/" + oldData[0].weather[0].icon + ".png")
   $("#day-0").find('.temperature').text('Temp: ' + oldData[0].main.temp + ' °F')
   $("#day-0").find('.windspeed').text('Wind: ' + oldData[0].wind.speed + ' MPH')
