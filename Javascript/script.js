@@ -128,10 +128,10 @@ function getCityData(keyname) {
     $("#day-" + index).find('.date').text(oldData[index].dt_txt.slice(0, 10))
     $("#day-" + index).find('.icon').attr("src", "http://openweathermap.org/img/w/" + oldData[index].weather[0].icon + ".png")
 
-    $("#day-" + index).find('.temperature').text('Temp: ' + oldData[index].main.temp)
-    $("#day-" + index).find('.windspeed').text('Wind" ' + oldData[index].wind.speed)
-    $("#day-" + index).find('.winddegree').text('@ ' + oldData[index].wind.deg)
-    $("#day-" + index).find('.humidity').text('Humidity: ' + oldData[index].main.humidity)
+    $("#day-" + index).find('.temperature').text('Temp: ' + oldData[index].main.temp + ' °F')
+    $("#day-" + index).find('.windspeed').text('Wind" ' + oldData[index].wind.speed + ' MPH')
+    $("#day-" + index).find('.winddegree').text('@ ' + oldData[index].wind.deg + '°')
+    $("#day-" + index).find('.humidity').text('Humidity: ' + oldData[index].main.humidity + '%')
 
 
 
