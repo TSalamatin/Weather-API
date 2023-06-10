@@ -1,6 +1,7 @@
 # Weather-API
 
 Link: https://tsalamatin.github.io/Weather-API/
+![Weather App](https://github.com/TSalamatin/Weather-API/assets/128180862/2d08a6b6-0464-45b2-b8cb-a01244d6e4e5)
 
 Week 6, Server Side APIs
 
